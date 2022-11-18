@@ -2,6 +2,6 @@
 Why is redux useful?
 The only way for the same state to be accessed by two different components, is if the state is defined in a parent component of the two child components, and the state and the state setter function is prop drilled to both child components.
 
-This can get very very complicated if you need to prop drill down the component tree a lot.
+This can get very complicated if you need to prop drill down the component tree a lot.
 
-Redux fixes this by having a store. This store holds each of the states you give it. The states held in this store can be accessed on any component. The store is created in the index.js file, so the highest level component.
+Redux fixes this by having a store. This store holds each of the states you give it. The states held in this store can be accessed by any component. The store is created in the index.js file, so the highest level component.
