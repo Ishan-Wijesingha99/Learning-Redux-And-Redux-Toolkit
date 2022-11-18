@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 
 // for every reducer you want to create, you need to create a new file in features
 import userReducer from './features/user'
+import themeReducer from './features/theme'
 
 // the provider is a JSX element that indicates to react that every JSX element wrapped inside of this provider element has access to the store. Because we want the states in the store to be accessed globally, it makes sense to add this at the highest level in index.js
 
@@ -19,7 +20,8 @@ import userReducer from './features/user'
 // a reducer is a function that takes
 const store = configureStore({
   reducer: {
-    user: userReducer
+    user: userReducer,
+    theme: themeReducer
   }
 })
 

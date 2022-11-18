@@ -22,10 +22,17 @@ export const userSlice = createSlice({
       // inside this function is where the state will actually be changed
       // all we do is set the value object to the payload object
       state.value = action.payload
+    },
+    logout: (state, action) => {
+      state.value = { 
+        name: '',
+        age: 0,
+        email: ''
+      }
     }
   }
 })
 
-export const { login } = userSlice.actions
+export const { login, logout } = userSlice.actions
 
 export default userSlice.reducer
