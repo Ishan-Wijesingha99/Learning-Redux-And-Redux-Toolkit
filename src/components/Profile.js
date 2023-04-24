@@ -12,7 +12,7 @@ export const Profile = () => {
   // here we are accessing the user state, and the value object inside of it
   const user = useSelector(state => state.user.value)
 
-  // here we are accessing the user state, and the value object inside of it
+  // here we are accessing the theme state, and the value object inside of it
   const themeColour = useSelector(state => state.theme.value)
 
   // should be { name: '', age: 0, email: '' } initially
